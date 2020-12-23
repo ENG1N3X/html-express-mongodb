@@ -27,14 +27,15 @@
         <span class="error hide">You haven't searched anything yet.</span>
     </section>
     <!-- Add to database popup -->
-    <button type="button" class="btn btn-primary btn-add-bar" data-add-bar-button>+</button>
-    <section class="add-bar" style="display: none;" data-add-bar-popup>
+    <button type="button" class="btn btn-primary btn-add-bar" id="btn-add-bar">+</button>
+    <section class="add-bar hide" id="add-bar">
         <form class="form add-bar-form">
+            <span class="add-bar-form__status hide"></span>
             <h4 class="add-bar__title">Add post</h4>
             <label for="add-bar-form__title" class="add-bar-form__label">Title</label>
-            <input id="add-bar-form__title" type="text" class="add-bar-form__title" placeholder="Post title">
+            <input value="Title" name="title" id="add-bar-form__title" type="text" class="add-bar-form__title" placeholder="Post title">
             <label for="add-bar-form__desc" class="add-bar-form__label">Description</label>
-            <input id="add-bar-form__desc" type="text" class="add-bar-form__desc" placeholder="Post description">
+            <input value="Descrition from frontend" name="description" id="add-bar-form__desc" type="text" class="add-bar-form__desc" placeholder="Post description">
             <button type="submit" class="btn btn-submit">Submit</button>
         </form>
     </section>

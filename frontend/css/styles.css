@@ -251,6 +251,12 @@ body.index-template .add-bar .add-bar-form .add-bar-form__desc {
   margin-bottom: 5px;
   padding: 5px 10px;
 }
+body.index-template .add-bar .add-bar-form .add-bar-form__status {
+  display: block;
+  color: #fd2828;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
 body.index-template .btn.btn-primary.btn-add-bar {
   width: 100px;
   height: 100px;

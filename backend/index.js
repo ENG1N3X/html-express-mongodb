@@ -5,9 +5,10 @@ const mongoose = require("mongoose");
 const cors = require("cors")
 
 // Routes
-const postsRoute = require("./routes/posts.route");
+const postsRoute = require("./routes/post.route");
 
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }))
 app.use(cors())
 
 app.use("/api/posts", postsRoute);

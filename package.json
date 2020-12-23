@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon backend/index.js"
+    "start": "nodemon backend/index.js",
+    "sass": "sass frontend/sass/styles.scss frontend/css/styles.css --watch"
   },
   "keywords": [],
   "author": "Yuriy K",
@@ -16,6 +17,7 @@
     "nodemon": "^2.0.6"
   },
   "dependencies": {
+    "busboy-body-parser": "^0.3.2",
     "cors": "^2.8.5"
   }
 }
